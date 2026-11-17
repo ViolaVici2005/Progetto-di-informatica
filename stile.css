@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  padding: 40px 24px;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.5;
+}
+h1 {
+  font-family: 'Times New Roman', Times, serif
+  font-size: 50px;
+  color: lightseagreen;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+figcaption {
+  font-size: 14px;
+  color: var(--tenue);
+  margin-top: 6px;
+}
+.Autore {
+  color: rgb(34, 103, 126);
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+img { max-width: 100%; height: auto; } 
+.scheda {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;   /* due colonne: circa 46% e 54% */
+  gap: 48px;                           /* lo spazio tra le colonne */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.miniature { margin: 0; }
+.miniature img {                        
+  width: 240px;
+  aspect-ratio: 2 / 3;                   
+  object-fit: cover;                     
+  border-radius: 8px;
+  }
+@media (max-width: 860px) {
+  .scheda {
+    grid-template-columns: 1fr;        
+  }
+ }
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 20px;
+  border-top: 1px solid #C6CDC6;
+  padding-top: 12px;
+}
+a { color: blue; }
+a:hover {color: var(--lapis); }
